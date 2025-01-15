@@ -14,13 +14,13 @@ const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || '237677088573'
 
 const ownerlist = ownervb.split(';');
 
-global.owner = [];
+global.owner = [237677088573];
 for (let i = 0; i < ownerlist.length; i++) {
     global.owner.push([ownerlist[i], true]);
 }
 //
 global.botname = process.env.BOTNAME || 'MEGA-AI';
-global.pairingNumber = process.env.BOT_NUMBER || '' ;  // put your number here
+global.pairingNumber = process.env.BOT_NUMBER || '237677088573' ;  // put your number here
 global.SESSION_ID = process.env.SESSION_ID || '' ;  // put your session id here
 
 global.mods = []
